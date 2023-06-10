@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestor.eventos.PanelAdministradorController">
+   <children>
+      <Label text="Panel de Administraicion">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font></Label>
+      <Separator prefHeight="29.0" prefWidth="375.0" visible="false" />
+      <Button fx:id="btnAddEventos" mnemonicParsing="false" onAction="#addEventos" prefHeight="26.0" prefWidth="109.0" text="Agregar Eventos" />
+      <Button fx:id="btnLista" mnemonicParsing="false" onAction="#listarEventos" prefHeight="26.0" prefWidth="109.0" text="Listar Eventos" />
+      <Button fx:id="btnReportes" mnemonicParsing="false" onAction="#reportes" prefHeight="26.0" prefWidth="109.0" text="Reportes" />
+   </children>
+</VBox>

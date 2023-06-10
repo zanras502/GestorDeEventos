@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="253.0" prefWidth="375.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestor.eventos.DetalleEventoController">
+    <AnchorPane fx:id="eventDetailsPane">
+    <GridPane>
+        <Label text="Nombre del Evento" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label text="Fecha" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label text="Lugar" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label text="Descripción" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        
+        <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField fx:id="dateField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="locationField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextArea fx:id="descriptionField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Button text="Guardar Cambios" GridPane.columnIndex="1" GridPane.rowIndex="4" onAction="#saveChanges" />
+    </GridPane>
+</AnchorPane>
+</VBox>

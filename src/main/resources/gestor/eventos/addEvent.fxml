@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="689.0" prefWidth="499.0" spacing="10" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestor.eventos.AddEventController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+
+    <TextField fx:id="nombreField" promptText="Nombre del Evento" />
+    <TextArea fx:id="sinopsisField" prefHeight="105.0" prefWidth="478.0" promptText="Sinopsis del Evento" />
+    <DatePicker fx:id="fechaInicioField" promptText="Fecha de Inicio" />
+    <DatePicker fx:id="fechaFinField" promptText="Fecha de Fin" />
+    <TextField fx:id="imagenField" editable="false" promptText="URL de la Imagen Publicitaria" />
+    <TextField fx:id="responsableField" promptText="Responsable del Evento" />
+    <DatePicker fx:id="publicacionField" promptText="Fecha de Publicación" />
+    <DatePicker fx:id="ocultarField" promptText="Fecha para Ocultar" />
+    <Button fx:id="seleccionarImagenButton" onAction="#seleccionarImagen" text="Seleccionar imagen" />
+    
+    <ImageView fx:id="imagenView" fitHeight="117.0" fitWidth="150" />
+   <GridPane alignment="CENTER" prefHeight="64.0" prefWidth="478.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+          
+          <Button fx:id="btnAgregar" onAction="#addEvent" prefHeight="26.0" prefWidth="165.0" text="Agregar Evento" GridPane.rowIndex="1">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <GridPane.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+         </Button>
+         <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editEvent" prefHeight="26.0" prefWidth="177.0" text="Editar Evento" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <GridPane.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+         </Button>
+         <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="26.0" prefWidth="181.0" text="Eliminar Evento" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <GridPane.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+         </Button>
+         <Button fx:id="btnRegresar" mnemonicParsing="false" onAction="#regresar" prefHeight="26.0" prefWidth="134.0" text="Regresar" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <GridPane.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         </Button>
+      </children>
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+   </GridPane>
+
+</VBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestor.eventos.InicioController">
+   <children>
+      <Label text="Gestor de Eventos y Venta de Boletos">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font></Label>
+      <Separator prefHeight="29.0" prefWidth="375.0" visible="false" />
+      <Button fx:id="btnVerEventos" mnemonicParsing="false" onAction="#cargaEventos" prefHeight="26.0" prefWidth="86.0" text="Ver Eventos" />
+      <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#cargaLogin" text="Iniciar Sesión" />
+      <Button fx:id="btnResitrarse" mnemonicParsing="false" onAction="#cargaRegistro" prefHeight="26.0" prefWidth="86.0" text="Registrarse" />
+   </children>
+</VBox>
